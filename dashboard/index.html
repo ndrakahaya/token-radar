@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101d2b">
+<title>Token Radar — protocol intelligence</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#board">Skip to protocol board</a>
+<header class="masthead"><a class="wordmark" href="#top" aria-label="Token Radar home"><span class="sigil">R</span><span>TOKEN <b>RADAR</b></span></a><span class="edition">ONCHAIN INTELLIGENCE <i>·</i> 01</span></header>
+<main id="top" class="layout">
+<section class="intro" aria-labelledby="title"><div><p class="eyebrow">PRE-TOKEN PROTOCOLS / RESEARCH DESK</p><h1 id="title">Find the signal.<br><em>Price the potential.</em></h1><p class="dek">A ranked view of tokenless protocols, estimated from fundamentals rather than promises. Explore the assumptions behind every number.</p></div><div class="headline-stat"><span>RADAR UNIVERSE</span><b id="protocol-count">—</b><small>protocols tracked</small><div class="signal"><i></i> MODEL-BASED ESTIMATES</div></div></section>
+<section class="board-section" id="board" aria-labelledby="board-title"><div class="section-heading"><div><p class="eyebrow">THE RADAR</p><h2 id="board-title">Protocol board</h2></div><p class="hint">Select any row to open its research brief.</p></div>
+<div class="filters" aria-label="Board filters"><label class="filter search"><span>Search</span><input id="search" type="search" placeholder="Name or slug" autocomplete="off"></label><label class="filter"><span>Category</span><select id="category"><option value="">All categories</option></select></label><label class="filter"><span>Chain</span><select id="chain"><option value="">All chains</option></select></label><label class="watch"><input id="watch-only" type="checkbox"><span class="checkmark" aria-hidden="true"></span> Watchlist only</label><span class="result-count" id="result-count" aria-live="polite"></span></div>
+<div class="table-frame"><table><thead><tr><th><button data-sort="rank">Rank <span></span></button></th><th><button data-sort="name">Protocol <span></span></button></th><th><button data-sort="category">Category <span></span></button></th><th><button data-sort="chains">Chains <span></span></button></th><th><button data-sort="tvl">TVL <span></span></button></th><th><button data-sort="change">7D change <span></span></button></th><th><button data-sort="value">Implied value <span></span></button></th><th class="watch-head">★</th></tr></thead><tbody id="rows"></tbody></table><div id="empty" class="empty" hidden><b>No protocols match.</b><span>Try another search or clear a filter.</span></div></div></section>
+<section class="live-section" aria-labelledby="live-title"><div class="section-heading"><div><p class="eyebrow">MARKET CHECK</p><h2 id="live-title">Live-token comparables</h2></div><p class="hint">Market values offer context, not a direct target price.</p></div><div class="live-grid" id="live-grid"></div></section>
+<section class="method" aria-labelledby="method-title"><div><p class="eyebrow">HOW TO READ THE RADAR</p><h2 id="method-title">A model, not a forecast.</h2><p>Implied value is a comparative estimate of fully diluted token value. It is not a guarantee, a price target, or financial advice.</p></div><div class="method-copy"><h3>Valuation framework</h3><p class="formula">Implied value = protocol TVL × calibrated value-to-TVL multiple</p><p>The multiple reflects a protocol’s category economics, observed peer valuations, current growth, and maturity. Growth and scale can support a higher multiple; execution risk, concentration, and uncertain token utility constrain it. The result is a scenario estimate, not a promise of an airdrop or token launch.</p><h3>Calibration &amp; caveats</h3><p>Comparable protocols are grouped by business model and adjusted for differences in adoption and lifecycle. TVL and growth are snapshots and may move quickly; TVL can include incentives, recursive positions, or assets that are not economically independent. Model outputs are rounded and should be compared as ranges of relative potential, not precise outcomes.</p><p class="disclaimer">Research tool only · Verify protocol data and assumptions independently.</p></div></section>
+<footer><span>TOKEN RADAR <i>·</i> INDEPENDENT RESEARCH</span><span id="updated">Static snapshot</span></footer>
+</main>
+<aside class="detail" id="detail" hidden aria-labelledby="detail-title" aria-modal="true" role="dialog"><button class="detail-close" id="detail-close" aria-label="Close protocol details">×</button><div id="detail-content"></div></aside><div id="scrim" class="scrim" hidden></div>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
